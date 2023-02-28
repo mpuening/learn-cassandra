@@ -1,0 +1,4 @@
+spring:
+  cassandra:
+    keyspace-name: test
+    local-datacenter: datacenter1
