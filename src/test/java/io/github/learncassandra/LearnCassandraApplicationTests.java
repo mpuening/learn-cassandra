@@ -13,6 +13,12 @@ import io.github.learncassandra.repository.UserRepository;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
+/**
+ * Apache Cassandra does not run with Java 17, use Java 8. Relies on
+ * JAVA_HOME_8_X86 environment variable being set, for example:
+ *
+ * export JAVA_HOME_8_X86=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+ */
 @SpringBootTest
 @EnabledIfEnvironmentVariable(named = "JAVA_HOME_8_X86", matches = ".*", disabledReason = "Cassandra does not work on Java 17")
 class LearnCassandraApplicationTests {
