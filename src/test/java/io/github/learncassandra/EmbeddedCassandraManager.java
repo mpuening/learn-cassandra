@@ -18,7 +18,7 @@ public class EmbeddedCassandraManager {
 	/**
 	 * Use this version of Cassandra
 	 */
-	public static String CASSANDRA_VERSION = "4.0.8";
+	public static String CASSANDRA_VERSION = "4.1.2";
 
 	private static Cassandra CASSANDRA = null;
 
