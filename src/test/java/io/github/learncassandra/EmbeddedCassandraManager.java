@@ -16,9 +16,13 @@ public class EmbeddedCassandraManager {
 	public static String JAVA_HOME_ENV_NAME = "JAVA_HOME_8_X86";
 
 	/**
-	 * Use this version of Cassandra
+	 * Use this version of Cassandra...
+	 *
+	 * Can't find this version? Check valid versions here:
+	 *
+	 * https://downloads.apache.org/cassandra/
 	 */
-	public static String CASSANDRA_VERSION = "4.1.2";
+	public static String CASSANDRA_VERSION = "4.1.3";
 
 	private static Cassandra CASSANDRA = null;
 
